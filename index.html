@@ -48,10 +48,42 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu is-open">
+        <div class="container mobil-menu-container">
+          <button class="button-menu-close">
+            <svg class="button-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <a class="logo mobile-title-nav" href="./index.html"
+              ><span class="title-nav">Studio</span></a
+            >
+            <ul class="list">
+              <li class="nav-item">
+                <a class="nav-link current" href="./index.html">Studio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Portfolio</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="">Contacts</a></li>
+            </ul>
+          </nav>
+          <address>555</address>
+          <ul>
+            soz
+          </ul>
+        </div>
       </div>
     </header>
     <main>
-      <section class="holder-imeges">
+      <section class="holder-imeges hidden">
         <div class="container">
           <h1 class="images-text">Effective Solutions for Your Business</h1>
 
@@ -59,7 +91,7 @@
         </div>
       </section>
 
-      <section class="team">
+      <section class="team hidden">
         <div class="container">
           <h2 class="visually-hidden">Decision points</h2>
           <ul class="desc">
@@ -114,7 +146,7 @@
           </ul>
         </div>
       </section>
-      <section class="team-items">
+      <section class="team-items hidden">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
 
@@ -362,7 +394,7 @@
           </ul>
         </div>
       </section>
-      <section class="portfolio">
+      <section class="portfolio hidden">
         <div class="container">
           <h2 class="container-title">Our Portfolio</h2>
 
@@ -493,7 +525,7 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer hidden">
       <div class="container footer-center">
         <div class="container-logo">
           <a class="logo footer-logo" href="./index.html"
@@ -560,7 +592,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop is-open hidden">
       <div class="modal">
         <button class="modal-button" type="button">
           <svg class="button-icon" width="8" height="8">
