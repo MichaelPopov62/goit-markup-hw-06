@@ -54,7 +54,7 @@
           </svg>
         </button>
       </div>
-      <div class="mobile-menu is-open">
+      <div class="mobile-menu">
         <div class="container mobil-menu-container">
           <button class="button-menu-close">
             <svg class="button-icon" width="8" height="8">
@@ -62,28 +62,70 @@
             </svg>
           </button>
           <nav class="mobile-menu-nav">
-            <a class="logo mobile-title-nav" href="./index.html"
-              ><span class="title-nav">Studio</span></a
-            >
-            <ul class="list">
-              <li class="nav-item">
-                <a class="nav-link current" href="./index.html">Studio</a>
+            <ul class="mobile-nav-item">
+              <li class="mobile-item">
+                <a class="mobil-link current" href="./index.html">Studio</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">Portfolio</a>
+              <li class="mobile-item">
+                <a class="mobil-link-next" href="">Portfolio</a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="">Contacts</a></li>
+              <li class="mobile-item">
+                <a class="mobil-link-next" href="">Contacts</a>
+              </li>
             </ul>
           </nav>
-          <address>555</address>
-          <ul>
-            soz
+          <address class="mobile-contacts">
+            <ul class="mobile-contacts-list">
+              <li class="mobile-contacts-item">
+                <a
+                  class="mobile-contacts-link-next"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link-next" href="tel:+110001111111">
+                  +11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="mobil-social">
+            <li class="mobil-social-item">
+              <a class="mobil-social-list" href="">
+                <svg class="mobil-icons-social" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobil-social-item">
+              <a class="mobil-social-list" href="">
+                <svg class="mobil-icons-social" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobil-social-item">
+              <a class="mobil-social-list" href="">
+                <svg class="mobil-icons-social" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobil-social-item">
+              <a class="mobil-social-list" href="">
+                <svg class="mobil-icons-social" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </header>
     <main>
-      <section class="holder-imeges hidden">
+      <section class="holder-imeges">
         <div class="container">
           <h1 class="images-text">Effective Solutions for Your Business</h1>
 
@@ -146,7 +188,7 @@
           </ul>
         </div>
       </section>
-      <section class="team-items hidden">
+      <section class="team-items">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
 
@@ -394,7 +436,7 @@
           </ul>
         </div>
       </section>
-      <section class="portfolio hidden">
+      <section class="portfolio">
         <div class="container">
           <h2 class="container-title">Our Portfolio</h2>
 
@@ -525,7 +567,7 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer hidden">
+    <footer class="page-footer">
       <div class="container footer-center">
         <div class="container-logo">
           <a class="logo footer-logo" href="./index.html"
