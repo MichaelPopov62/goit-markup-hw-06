@@ -309,6 +309,7 @@ img {
 .mobil-social-item {
   max-width: 40px;
   max-height: 40px;
+  color: #434455;
 }
 .mobil-social-list {
   display: flex;
