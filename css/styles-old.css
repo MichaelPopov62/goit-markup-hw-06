@@ -35,6 +35,14 @@ img {
 .team-img {
   max-width: 100%;
 }
+/*common*/
+
+.container {
+  max-width: 320px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
 /*header*/
 
 .header-container {
@@ -73,6 +81,16 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.contacts {
+  display: flex;
+  font-style: normal;
+  margin-left: auto;
+}
+
+.contacts-link {
+  flex-direction: row;
+  gap: 40px;
 }
 .contacts {
   font-style: normal;
