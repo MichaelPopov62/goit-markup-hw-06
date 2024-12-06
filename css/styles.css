@@ -705,6 +705,19 @@ img {
     margin-right: 16px;
     width: calc((100% - 24px) / 2);
   }
+  .desc-lead {
+    margin-bottom: 8px;
+    color: #2e2f42;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+  }
+  .desc-text {
+    line-height: 1.5;
+    color: #434455;
+    font-weight: 500;
+    line-height: 1.5;
+  }
 }
 /*team-items*/
 
