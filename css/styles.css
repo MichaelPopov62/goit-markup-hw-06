@@ -62,7 +62,6 @@ img {
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
-    padding: 0 15px;
   }
 }
 
@@ -183,7 +182,6 @@ img {
 @media screen and (min-width: 1158px) {
   .header-logo {
     margin-right: 76px;
-    margin-left: 156px;
   }
   .contacts-list {
     display: flex;
@@ -324,8 +322,6 @@ img {
   fill: #fff;
 }
 
-@media screen and (min-width: 768px) {
-}
 /*holder-imeges*/
 
 .holder-imeges {
@@ -380,9 +376,7 @@ img {
 .visually-hidden {
   display: none;
 }
-.container {
-  max-width: 288px;
-}
+
 .desc-lead {
   text-align: center;
   margin-bottom: 8px;
@@ -418,11 +412,6 @@ img {
 }
 /*team-items*/
 
-.container {
-  max-width: 320px;
-
-  margin-bottom: 96px;
-}
 .team-title {
   font-weight: 700;
   text-transform: capitalize;
