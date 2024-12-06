@@ -48,6 +48,18 @@ img {
 .team-img {
   max-width: 100%;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /*common*/
 .container {
   max-width: 320px;
@@ -692,21 +704,19 @@ img {
   }
 
   .team {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding-top: ;
+    padding-bottom: ;
   }
 
   .desc {
     display: flex;
-    row-gap: 24px;
+    gap: 24px;
     width: 736px;
   }
   .desc-item {
-    margin-right: 16px;
     width: calc((100% - 24px) / 2);
   }
   .desc-lead {
-    margin-bottom: 8px;
     color: #2e2f42;
     font-weight: 700;
     font-size: 36px;
