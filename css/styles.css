@@ -74,6 +74,7 @@ img {
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+    padding: 0 15px;
   }
 }
 
@@ -656,6 +657,9 @@ img {
 }
 
 /*team*/
+.team-container {
+  max-width: 296px;
+}
 .wrapper-icon {
   display: none;
 }
@@ -701,6 +705,9 @@ img {
   .burger-btn {
     display: none;
   }
+  .team-container {
+    max-width: 584px;
+  }
   .desc {
     display: flex;
     flex-wrap: wrap;
@@ -727,6 +734,9 @@ img {
 @media screen and (min-width: 1158px) {
   .burger-btn {
     display: none;
+  }
+  .team-container {
+    max-width: 1158px;
   }
   .desc {
     display: flex;
@@ -817,6 +827,7 @@ img {
 }
 
 .team-list {
+  max-width: 264px;
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -865,10 +876,6 @@ img {
     margin-bottom: 8px;
   }
   .team-text {
-    align-items: center;
-    justify-content: center;
-    margin: 8px 52px;
-
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -880,7 +887,6 @@ img {
     gap: 24px;
     margin-top: 8px;
     justify-content: center;
-    margin-left: 8px;
   }
   .massanger-item {
     width: 40px;
@@ -898,7 +904,8 @@ img {
 @media screen and (min-width: 1158px) {
   .team-card {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: row;
     gap: 24px;
   }
   .team-list {
@@ -907,7 +914,7 @@ img {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
       0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     margin-bottom: 72px;
-    width: calc((100% - 24px) / 2);
+    width: calc((100% - 72px) / 4);
   }
   .persona {
     padding: 32px 16px;
@@ -973,15 +980,13 @@ img {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-
-  column-gap: 24px;
+  gap: 48px;
   margin-bottom: 96px;
   justify-content: center;
 }
 
 .portfolio-item {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: calc((100% - 48px) / 3);
 }
 .portfolio-item:hover .overlow {
   transform: translateY(0);
@@ -994,8 +999,7 @@ img {
 .thumb {
   position: relative;
   overflow: hidden;
-  width: 360px;
-  height: 300px;
+
   overflow: hidden;
 }
 .direction {
@@ -1048,6 +1052,11 @@ img {
 @media screen and (min-width: 768px) {
   .portfolio-item {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .portfolio-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: calc((100% - 24px) / 2);
   }
 }
@@ -1055,7 +1064,9 @@ img {
 @media screen and (min-width: 1158px) {
   .portfolio-item {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    width: calc((100% - 48px) / 3);
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: calc((100% - 120px) / 6);
   }
 }
 
