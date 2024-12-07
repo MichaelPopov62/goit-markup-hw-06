@@ -838,15 +838,22 @@ img {
     gap: 24px;
   }
   .team-list {
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
       0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     margin-bottom: 72px;
     width: calc((100% - 24px) / 2);
+    align-items: center;
   }
   .persona {
     padding: 32px 16px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: center;
   }
   .team-name {
     font-weight: 500;
@@ -855,14 +862,10 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    margin-bottom: 8px;
-    margin-right: 65px;
   }
   .team-text {
     align-items: center;
     justify-content: center;
-    margin: 8px 52px;
-
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -870,29 +873,26 @@ img {
     color: #434455;
   }
   .massangers {
-    display: flex;
-    gap: 24px;
-    margin-top: 8px;
     justify-content: flex-start;
-    margin-left: 8px;
   }
-  .massanger-item {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+  .massanger-icons-persona {
+    fill: #f4f4fd;
+  }
+  .social-item:hover,
+  .social-item:focus {
+    background-color: #404bbf;
   }
 }
-
-.massanger-icons-persona {
-  fill: #f4f4fd;
-}
-.social-item:hover,
-.social-item:focus {
-  background-color: #404bbf;
+@media screen and (min-width: 1158px) {
+  .burger-btn {
+    display: none;
+  }
+  .team-card {
+    flex-wrap: nowrap;
+  }
 }
 
 /*portfolio*/
-
 .container-title {
   text-align: center;
   margin-bottom: 72px;
@@ -958,11 +958,39 @@ img {
   padding: 40px 32px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    justify-content: center;
+  }
+  .portfolio-list {
+    row-gap: 72px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .portfolio-item {
+    width: calc((100% - 48px) / 3);
+  }
+  .thumb {
+    width: auto;
+    height: auto;
+  }
+  .portfolio-list {
+    row-gap: 40px;
+  }
+}
 
 /*footer*/
-.container footer-center {
-  max-width: 320px;
+.footer-center {
+  display: flex;
+  flex-wrap: wrap;
 }
+.container-logo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
 .page-footer {
   background-color: #2e2f42;
   padding-top: 100px;
@@ -980,9 +1008,9 @@ img {
 .footer-text {
   line-height: 1.5;
   color: #f4f4fd;
-  max-width: 264px;
   width: 264px;
   margin-bottom: 72px;
+  margin-left: 16px;
 }
 .logo-part {
   color: #f4f4fd;
@@ -1001,6 +1029,9 @@ img {
   display: flex;
   gap: 16px;
   justify-content: center;
+}
+.massanger-icons-footer {
+  fill: #f4f4fd;
 }
 .massanger-item-footer {
   width: 40px;
@@ -1021,6 +1052,7 @@ img {
 }
 .wrapper {
   margin-bottom: 72px;
+  width: 100%;
 }
 .subscribe {
   margin-left: auto;
@@ -1031,7 +1063,7 @@ img {
 
 .form-email {
   display: block;
-  width: 288px;
+
   height: 40px;
   padding-left: 16px;
   font-weight: 400;
@@ -1096,6 +1128,46 @@ img {
 }
 .mobile-nav-item {
   margin-right: 160px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-center {
+    margin-left: 108px;
+  }
+  .wrapper {
+    width: auto;
+  }
+  .container-logo {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+  .subscribe {
+    margin-left: 0;
+  }
+
+  .name {
+    text-align: left;
+  }
+
+  .connection {
+    display: flex;
+    gap: 24px;
+  }
+  .form-button {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container-logo {
+    width: auto;
+  }
+  .footer-center {
+    gap: 24px;
+    margin-left: 156px;
+  }
 }
 
 /*backdrop*/
