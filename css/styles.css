@@ -227,6 +227,7 @@ img {
   width: 24px;
   height: 24px;
   right: 24px;
+  left: 272px;
   border-radius: 100%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -275,6 +276,7 @@ img {
   text-transform: capitalize;
   color: #404bbf;
 }
+
 .mobil-link-next {
   color: #2f2f37;
 }
@@ -288,10 +290,14 @@ img {
   min-height: 72px;
   margin-bottom: 40px;
   font-family: 'Roboto', sans-serif;
+  width: 193px;
 }
 
 .mobile-contacts-list {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
   font-size: 16px;
   letter-spacing: 0.02em;
   color: #434455;
@@ -299,8 +305,21 @@ img {
   transition-duration: 250ms;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mobile-contacts-item {
+.mobile-contacts-link-next,
+.mobile-contacts-tel-next {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
   padding-bottom: 24px;
+  font-style: normal;
+}
+.mobile-contacts-tel-next {
+  color: #4d5ae5;
+}
+.mobile-contacts-link-next {
+  color: #434455;
+  margin-bottom: 24px;
 }
 /*social*/
 .mobil-social {
@@ -313,14 +332,15 @@ img {
 .mobil-social-item {
   max-width: 40px;
   max-height: 40px;
-  color: #434455;
+  border-radius: 50%;
+  background-color: #4d5ae5;
 }
 .mobil-social-list {
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: #4d5ae5;
-  border-radius: 50%;
+  fill: #fff;
+
   margin-left: auto;
   margin-right: auto;
   align-items: center;
@@ -569,10 +589,10 @@ img {
 /*holder-imeges*/
 
 .holder-imeges {
-  max-width: 100%;
-  padding-top: 84px;
-  padding-bottom: 80px;
-  padding-right: 16px;
+  max-width: 320px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  margin: 0 auto;
   background: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -617,10 +637,9 @@ img {
     display: none;
   }
   .holder-imeges {
-    max-width: 100%;
+    max-width: 768px;
     padding-top: 112px;
     padding-bottom: 112px;
-    padding-right: 136px;
 
     background: #2e2f42;
     background-image: linear-gradient(
@@ -636,7 +655,6 @@ img {
     font-weight: 500;
     width: 496px;
     margin: 0 120px;
-    padding-top: 112px;
     font-size: 56px;
   }
   .button-imeges {
@@ -653,8 +671,7 @@ img {
   .holder-imeges {
     padding-top: 188px;
     padding-bottom: 188px;
-    padding-right: auto px;
-    padding-left: auto;
+    max-width: 1440px;
   }
 }
 
@@ -673,13 +690,11 @@ img {
   padding-top: 96px;
   padding-bottom: 96px;
 }
-.desc-item {
-  margin-bottom: 72px;
-}
 
 .desc {
-  display: block;
-  gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 .desc-lead {
   font-weight: 700;
@@ -697,7 +712,6 @@ img {
   font-size: 16px;
   letter-spacing: 0.02em;
   color: #434455;
-  margin-top: 8px;
 }
 
 @media screen and (min-width: 768px) {
@@ -710,7 +724,8 @@ img {
   .desc {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    row-gap: 72px;
+    column-gap: 24px;
   }
   .desc-item {
     width: calc((100% - 24px) / 2);
@@ -773,7 +788,6 @@ img {
     font-size: 20px;
     line-height: 1.2;
     text-align: left;
-    margin-bottom: 8px;
     letter-spacing: 0.02em;
   }
 }
@@ -801,7 +815,13 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-align: center;
-  margin-bottom: 72px;
+  padding-top: 96px;
+}
+.team-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
+  padding-top: 72px;
 }
 .persona {
   padding: 32px 0;
@@ -837,7 +857,6 @@ img {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  margin-bottom: 72px;
 }
 
 .massanger-icons-persona {
@@ -853,19 +872,19 @@ img {
   }
   .team-title {
     color: #2e2f42;
-    margin-bottom: 72px;
   }
   .team-card {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    row-gap: 64px;
+    column-gap: 24px;
   }
   .team-list {
     background-color: #ffffff;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
       0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    margin-bottom: 72px;
+
     width: calc((100% - 24px) / 2);
   }
   .persona {
@@ -878,7 +897,6 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    margin-bottom: 8px;
   }
   .team-text {
     font-size: 16px;
@@ -886,12 +904,11 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
-    margin-bottom: 8px;
   }
   .massangers {
     display: flex;
     gap: 24px;
-    margin-top: 8px;
+
     justify-content: center;
   }
   .massanger-item {
@@ -921,6 +938,9 @@ img {
       0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     margin-bottom: 72px;
     width: calc((100% - 72px) / 4);
+  }
+  .team-title {
+    padding-top: 120px;
   }
   .persona {
     padding: 32px 16px;
@@ -1185,11 +1205,10 @@ img {
   display: flex;
   gap: 16px;
   flex-direction: column;
-  align-items: center;
 }
 .form-button {
   width: 165px;
-  display: flex;
+  display: block;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -1206,11 +1225,12 @@ img {
   border: none;
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
+  margin: 0 0 0 60px;
 }
 
 .form-email {
   display: block;
-  width: 100%;
+  width: 288px;
   height: 40px;
   padding-left: 16px;
   font-weight: 400;
@@ -1280,7 +1300,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .footer-container {
-    width: 80%;
+    padding: 0 108px;
   }
   .logo {
     text-align: left;
@@ -1302,11 +1322,15 @@ img {
   .footer-socials {
     align-items: flex-start;
   }
+  .form-email {
+    width: 264px;
+  }
 }
 @media screen and (min-width: 1158px) {
   .footer-container {
     flex-wrap: nowrap;
     gap: 0;
+    padding: 0 15px;
   }
   .footer-logo {
     margin-right: 120px;
@@ -1393,8 +1417,7 @@ img {
 
   width: 288px;
   min-height: 584px;
-  padding: 72px 24px 24px 24px;
-  margin-right: 16px;
+  padding: 0 16px;
 }
 .modal-button {
   display: flex;
@@ -1573,6 +1596,7 @@ img {
 .button {
   line-height: 1.5;
   font-weight: 500;
+  margin-left: auto;
   margin-right: auto;
   display: block;
   min-width: 169px;
