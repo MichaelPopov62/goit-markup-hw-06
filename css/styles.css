@@ -286,11 +286,9 @@ img {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  width: 193px;
-  min-height: 72px;
+
   margin-bottom: 40px;
   font-family: 'Roboto', sans-serif;
-  width: 193px;
 }
 
 .mobile-contacts-list {
