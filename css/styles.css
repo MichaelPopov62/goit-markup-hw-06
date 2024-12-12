@@ -274,6 +274,8 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+}
+.mobil-link current {
   color: #404bbf;
 }
 
@@ -314,10 +316,17 @@ img {
 }
 .mobile-contacts-tel-next {
   color: #4d5ae5;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
 }
 .mobile-contacts-link-next {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
   color: #434455;
-  margin-bottom: 24px;
 }
 /*social*/
 .mobil-social {
@@ -325,19 +334,18 @@ img {
   gap: 40px;
   justify-content: flex-start;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 40px;
 }
 .mobil-social-item {
-  max-width: 40px;
-  max-height: 40px;
-  border-radius: 50%;
-  background-color: #4d5ae5;
+  width: 40px;
+  height: 40px;
 }
 .mobil-social-list {
   display: flex;
   width: 100%;
   height: 100%;
   fill: #fff;
+  border-radius: 50%;
+  background-color: #4d5ae5;
 
   margin-left: auto;
   margin-right: auto;
@@ -813,13 +821,12 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-align: center;
-  padding-top: 96px;
 }
 .team-card {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
-  padding-top: 72px;
+  margin-top: 72px;
 }
 .persona {
   padding: 32px 0;
@@ -934,12 +941,10 @@ img {
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
       0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    margin-bottom: 72px;
+
     width: calc((100% - 72px) / 4);
   }
-  .team-title {
-    padding-top: 120px;
-  }
+
   .persona {
     padding: 32px 16px;
   }
@@ -1206,7 +1211,7 @@ img {
 }
 .form-button {
   width: 165px;
-  display: block;
+  display: flex;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -1223,7 +1228,7 @@ img {
   border: none;
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
-  margin: 0 0 0 60px;
+  margin: 0 auto;
 }
 
 .form-email {
@@ -1309,8 +1314,7 @@ img {
     column-gap: 24px;
     row-gap: 72px;
   }
-  .footer-logo,
-  .footer-subscribe {
+  .footer-logo {
     width: 264px;
   }
   .connection {
